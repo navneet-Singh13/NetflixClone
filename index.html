@@ -1,208 +1,238 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Netflix Clone</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Netflix Clone</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
 </head>
+
 <body>
-    <nav id ="navbar">
-       
-<html lang="en">
-<head>
+
+
+  <html lang="en">
+
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" id = "sheetmode">
     <title>Netflix</title>
-</head>
-<body>
+  </head>
+
+  <body id ="body">
     <header class="showcase">
-        <div class="showcase-top">
-            <nav> 
-                <img src="logo.png.png" alt="Netflix Logo" id = "logo">
-                <a href="#" id="sign-in">Sign In</a>
-            <div class="dropdown" id = "lang-but">
-                <button class="btn dropdown-toggle" type="button" id="lang-but" data-toggle="dropdown" aria-haspopup="true" >
-                  Language
-                </button>
-                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                  <a class="dropdown-item" href="#">Action</a>
-                  <a class="dropdown-item" href="#">Another action</a>
-                  <a class="dropdown-item" href="#">Something else here</a>
+      <div class="showcase-top">
+        <nav>
+          <img src="netflix-logo.png" alt="Netflix Logo" id="logo">
+          <a id ="bgmode" >☀️</a>
+          <a href="#" id="sign-in">Sign In</a>
+          
+          <div id="lang-top">English🌐</div>
+          
+
+      </div>
+      </nav>
+      </div>
+
+      <div class="main-div">
+        <div id="main-text"></div>
+        <h1 id="intro-movies">Unlimited Movies, TV <br> shows and more.</h1>
+        <h4 id="watch">Watch Anywhere,Cancel Anytime</h4>
+        <br>
+        <p id="ready">Ready to watch? Enter your email to create or restart your membership.</p>
+
+        <div id="al">
+          <input type="email" name="email" id="mail" placeholder="Email address">
+
+          <button href="#" class="getst">GET STARTED</button>
+        </div>
+        <div id="none">
+
+        </div>
+      </div>
+      <hr class="after-line">
+    </header> <br>
+
+
+    <div id="home">
+
+
+      <div class="cards">
+        <div class="desc-plus-image">
+          <div class="content-text">
+            <h1 class="card-content-head">Enjoy on your TV.</h1>
+            <h3 class="card-content-des">Watch on smart TVs, PlayStation, <br> Xbox, Chromecast, Apple TV,
+              Blu-ray players <br> and more.</h3>
+          </div>
+          <img src="tv.gif" alt="Netflix TV" class="content-images" id = "gif-1">
+        </div>
+        <hr class="after-line">
+        <div class="desc-plus-image">
+          <img src="uni.gif" alt="Netflix TV" class="content-images" id="gif-2">
+          <div class="content-text">
+
+            <h1 class="card-content-head">Enjoy on your TV.</h1>
+            <h3 class="card-content-des">Watch on smart TVs, PlayStation, <br> Xbox, Chromecast, Apple TV,
+              Blu-ray players <br> and more.</h3>
+          </div>
+
+        </div>
+        <hr class="after-line">
+        <div class="desc-plus-image">
+          <div class="content-text">
+            <h1 class="card-content-head">Enjoy on your TV.</h1>
+            <h3 class="card-content-des">Watch on smart TVs, PlayStation, <br> Xbox, Chromecast, Apple TV,
+              Blu-ray players <br> and more.</h3>
+          </div>
+          <img src="netf.gif" alt="Netflix TV" class="content-images" id = "gif-3">
+        </div>
+        <hr class="after-line">
+        <div class="desc-plus-image">
+          <img src="children-image.png" alt="Netflix TV" class="content-images" id="child-img">
+          <div class="content-text">
+            <h1 class="card-content-head">Enjoy on your TV.</h1>
+            <h3 class="card-content-des">Watch on smart TVs, PlayStation, <br> Xbox, Chromecast, Apple TV,
+              Blu-ray players <br> and more.</h3>
+          </div>
+
+        </div>
+        <hr class="after-line">
+        <div id="faqsignin">
+          <div id="faqs">
+            <h1 id="faq-head">Frequently Asked Questions</h1>
+            <div class="qa-container">
+              <div class="qa-box">
+                <div id="question">
+                  <span id="ques">question </span>
+                  <button id="add0" class="add">+</button>
+                  <button id="close0" class="close">x</button>
+                </div>
+                <hr id="line" />
+                <div id="ans0" class="ans">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos ratione
+                  consectetur, aspernatur dignissimos vero similique nam nesciunt
+                  tempore perferendis soluta. Lorem ipsum dolor, sit amet consectetur
+                  adipisicing elit. Reprehenderit, consequatur.
                 </div>
               </div>
-              </nav>
-        </div>
-        <img src="https://assets.nflxext.com/ffe/siteui/vlv3/0ef67cc5-0aa7-47cf-87bd-7f595afc7cfb/c96f2a1d-1627-40aa-a29e-6ab6b27b35ab/IN-en-20221107-popsignuptwoweeks-perspective_alpha_website_small.jpg" alt="" id ="main-back" >
-        <div class="main-div" >
-           
-            <h1>Unlimited movies, TV shows and more.</h1>
-            <h3>All of Netflix, starting at just ₹ 199.</h3>
-            <p>Ready to watch? Enter your email to create or restart your membership.</p>
-            <div id = "al">
-                <input type="email" name="email" id="mail" placeholder="Email address">
+              <div class="qa-box">
+                <div id="question">
+                  <span id="ques">question</span>
 
-                <button href="#" class="getst">GET STARTED ></button>
-            
-            
+                  <button id="add1" class="add">+</button>
+                  <button id="close1" class="close">x</button>
+                </div>
+                <hr id="line" />
+                <div id="ans1" class="ans">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos ratione
+                  consectetur, aspernatur dignissimos vero similique nam nesciunt
+                  tempore perferendis soluta. Lorem ipsum dolor, sit amet consectetur
+                  adipisicing elit. Reprehenderit, consequatur.
+                </div>
+              </div>
+              <div class="qa-box">
+                <div id="question">
+                  <span id="ques">question</span>
+                  <button id="add2" class="add">+</button>
+                  <button id="close2" class="close">x</button>
+                </div>
+                <hr id="line" />
+                <div id="ans2" class="ans">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos ratione
+                  consectetur, aspernatur dignissimos vero similique nam nesciunt
+                  tempore perferendis soluta. Lorem ipsum dolor, sit amet consectetur
+                  adipisicing elit. Reprehenderit, consequatur.
+                </div>
+
+              </div>
+              <div class="qa-box" id="qa-box-3">
+                <div id="question">
+                  <span id="ques">question</span>
+                  <button id="add3" class="add">+</button>
+                  <button id="close3" class="close">x</button>
+                </div>
+                <hr id="line" />
+                <div id="ans3" class="ans">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos ratione
+                  consectetur, aspernatur dignissimos vero similique nam nesciunt
+                  tempore perferendis soluta. Lorem ipsum dolor, sit amet consectetur
+                  adipisicing elit. Reprehenderit, consequatur.
+                </div>
+
+              </div>
+
             </div>
-            
+            <div id="use"></div>
+
+
+            <div id="last-section-signin">
+
+              <p id="last-para">Ready to watch? Enter your email to create or restart your membership.</p>
+              <input type="email" name="email" id="mail" placeholder="Email address">
+
+              <button href="#" class="getst">GET STARTED ></button>
+
+            </div>
+
+            <footer>
+              <table>
+               <th>Questions? Call 000-800-919-1694</th>
+               <tr>
+                 <td>FAQ</td>
+                 <td>Help Centre</td>
+                 <td>Account</td>
+                 <td>Media Centre</td>
+               </tr>
+               <tr>
+                 <td>Investor Relations</td>
+                 <td>Cookie Preferences</td>
+                 <td>Corporate Information</td>
+                 <td>Contact Us</td>
+                 
+               </tr>
+               <tr>
+                 <td>Speed Test</td>
+                 <td>Legal Notices</td>
+                 <td>Only on Netflix</td>
+                 
+                 
+               </tr>
+               <tr>
+                 <td>
+                   <div class="dropdown">
+                     <button class="dropbtn">🌐 English</button>
+                     <div class="dropdown-content">
+                     <a href="#">Hindi</a>
+                     </div>
+                   </div>
+                </td></tr>
+               <tr><td>Netflix India</td></tr>
+              </table>
+              
+             </footer>
+
+
+          </div>
+
         </div>
-       
-    </header> <br> 
-    <div id ="pseudo">
+      </div>
+      
+    </div>
+
+   
 
     </div>
-    <div id ="line">
 
-    </div>
-        
-        <div class="card-1">
-            <div class="desc-1">
-                <h1>Enjoy on your TV.</h1>
-                <h3>Watch on smart TVs, PlayStation, <br> Xbox, Chromecast, Apple TV, Blu-ray players and more.</h3>
-            </div>
-            <img src="tv.png" alt="Netflix TV" id = "tv"><div id ="line">
+  </body>
 
-            </div>
-            
-            <div class="card-1">
-                <div class="desc-1">
-                    <h1>Download your shows to <br> watch offline.</h1>
-                    <h3>Save your favourites easily and always have <br> something to watch.</h3>
-                </div>
-                <img src="tv-2.png" alt="Netflix TV" id = "tv"><div id ="line">
+  </html>
 
-                </div>
-                <div class="card-1">
-                    <div class="desc-1">
-                        <h1>Watch everywhere. </h1>
-                        <h3>Stream unlimited movies and TV  shows on your <br> phone tablet, laptop, and TV.</h3>
-                    </div>
-                    <img src="https://media.giphy.com/media/yDmzYEluQYXC0/giphy.gif" alt="Netflix TV" id = "tvgif">
-                    <div id ="line">
 
-                    </div>
-                    <div class="card-1">
-                        <div class="desc-1">
-                            <h1>Create profiles for <br> children.</h1>
-                            <h3>Send children on adventures with their <br> favourite characters in a space made just for <br> them—free with your membership.</h3>
-                        </div>
-                        <img src="https://th.bing.com/th/id/R.edd8a77cb78e3e1b0c16157a9fcd4d3f?rik=AgLK48mv7dlfLA&riu=http%3a%2f%2fmedia.giphy.com%2fmedia%2frjiRFTZ0NIdi%2fgiphy.gif&ehk=HcGyXsJd24OM06%2bXoZf9oNNhPS%2fmJ4jgD6jb0N0Xg4c%3d&risl=&pid=ImgRaw&r=0" alt="Netflix TV" id = "tvgif">
-                        <div id ="line">
 
-                        </div> </section>
-                        <div class="ques">
-                            <div class="panel-group" id="accordion">
-                                <h4>Frequently Asked Questions?</h4>
-                                <div class="panel panel-default">
-                                  <div class="panel-heading">
-                                    <h4 class="panel-title">
-                                      <a data-toggle="collapse" data-parent="#accordion" href="#collapse1" class ="data">
-                                     What can I watch on Netflix?</a>
-                                    </h4>
-                                  </div>
-                                  <div id="collapse1" class="panel-collapse collapse ">
-                                    <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-                                    minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                                    commodo consequat.</div>
-                                  </div>
-                                </div>
-                                <div class="panel panel-default">
-                                  <div class="panel-heading">
-                                    <h4 class="panel-title">
-                                      <a data-toggle="collapse" data-parent="#accordion" href="#collapse2" class ="data">
-                                      Is Netflix good for Kids?</a>
-                                    </h4>
-                                  </div>
-                                  <div id="collapse2" class="panel-collapse collapse">
-                                    <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-                                    minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                                    commodo consequat.</div>
-                                  </div>
-                                </div>
-                                <div class="panel panel-default">
-                                  <div class="panel-heading">
-                                    <h4 class="panel-title">
-                                      <a data-toggle="collapse" data-parent="#accordion" href="#collapse3" class ="data">
-                                     How do I cancel?</a>
-                                    </h4>
-                                  </div>
-                                  <div id="collapse3" class="panel-collapse collapse">
-                                    <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-                                    minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                                    commodo consequat.</div>
-                                  </div>
-                                </div>
-                              </div>
-                              <div class="panel-group" id="accordion">
-                                <div class="panel panel-default">
-                                  <div class="panel-heading">
-                                    <h4 class="panel-title">
-                                      <a data-toggle="collapse" data-parent="#accordion" href="#collapse1" class ="data">
-                                      What is Netflix?</a>
-                                    </h4>
-                                  </div>
-                                  <div id="collapse1" class="panel-collapse collapse ">
-                                    <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-                                    minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                                    commodo consequat.</div>
-                                  </div>
-                                </div>
-                                <div class="panel panel-default">
-                                  <div class="panel-heading">
-                                    <h4 class="panel-title">
-                                      <a data-toggle="collapse" data-parent="#accordion" href="#collapse2" class ="data">
-                                      How much does Netflix cost?</a>
-                                    </h4>
-                                  </div>
-                                  <div id="collapse2" class="panel-collapse collapse">
-                                    <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-                                    minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                                    commodo consequat.</div>
-                                  </div>
-                                </div>
-                                <div class="panel panel-default">
-                                  <div class="panel-heading">
-                                    <h4 class="panel-title">
-                                      <a data-toggle="collapse" data-parent="#accordion" href="#collapse3" class ="data">
-                                     Where can I watch?</a>
-                                    </h4>
-                                  </div>
-                                  <div id="collapse3" class="panel-collapse collapse">
-                                    <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-                                    minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                                    commodo consequat.</div>
-                                  </div>
-                                </div>
-                              </div>
-                        </div>
-                        <footer>
-                            <div id = "al">
-                                <input type="email" name="email" id="mail" placeholder="Email address">
-                
-                                <button href="#" class="getst">GET STARTED ></button>
-                            
-                            
-                            </div>
-                            <img src="footer.png" alt="">
-                        </footer>
-                    
+  <script src="script.js"></script>
 </body>
-</html>
 
-    </nav>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-</body>
 </html>

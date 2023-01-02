@@ -1,26 +1,37 @@
 @import url("https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Bellota+Text&display=swap");
 body {
-  background-color: black;
   position: sticky;
-  overflow: visible;
-  width: 100%;
-  transition: all 1s;
-}
 
+  width: 100%;
+  background: #dbe6f6; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #c5796d,
+    #dbe6f6
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #c5796d,
+    #dbe6f6
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+#home {
+  z-index: -2;
+}
 * {
   user-select: none;
-  color: white;
+  color: rgb(0, 0, 0);
   font-family: sans-serif;
 }
 
 header {
   background-image: linear-gradient(
-      0deg,
-      rgba(0, 0, 0, 0.8),
-      rgba(0, 0, 0, 0.8)
+      2deg,
+      rgba(0, 0, 0, 0.949),
+      rgba(0, 0, 0, 0.344)
     ),
-    url("background-netflix.jpg");
+    url("blury.png");
   background-repeat: no-repeat;
   background-size: 100% 100%;
 }
@@ -28,6 +39,7 @@ header {
   height: 13rem;
 }
 #lang-top {
+    color: antiquewhite;
   float: right;
   margin: 0 1.5em 0 0;
   padding: 7px 19px 7px 7px;
@@ -39,7 +51,7 @@ header {
   box-shadow: none;
 }
 :root {
-  --netred: rgb(255, 21, 21);
+  --netred: rgb(188, 67, 67);
   --myfont: "Darker Grotesque", sans-serif;
   --netgrey: rgb(64, 64, 64);
 }
@@ -60,15 +72,19 @@ header {
   color: white;
 }
 #intro-movies {
+  color: azure;
   
   font-size: 4em;
 }
 #watch {
+  color: azure;
   font-size: 1.5em;
-  font-weight: lighter;
+  
 }
 #ready {
-  font-size: large;
+  color: azure;
+  
+  font-size: x-large;
 }
 nav {
   margin-left: auto;
@@ -89,7 +105,7 @@ nav {
   color: white;
 }
 #sign-in:hover {
-  background-color: red;
+  background-color: rgb(255, 75, 75);
 }
 .main-div {
   text-align: center;
@@ -118,23 +134,25 @@ nav {
   background-color: red;
 }
 #mail {
-  color: black;
-  font-family: "Bellota Text", cursive;
+  background-color: #4c4c4c;
+  color: rgb(255, 255, 255);
+
   width: 39em;
   margin: 0;
   border: none;
   height: 4.3rem;
   position: relative;
   display: inline-block;
-  font-size: smaller;
+  font-size: medium;
+  font-weight: bold;
 }
 
 .after-line:not(.home) {
   width: 100%;
   color: grey;
   height: 6px;
-  color: rgb(55, 55, 55);
-  background-color: rgb(61, 61, 61);
+  color: rgb(149, 149, 149);
+  background-color: rgb(121, 121, 121);
   border: none;
   opacity: 1;
 }
@@ -190,7 +208,7 @@ nav {
 #ques,
 .ans {
   font-weight: lighter;
-  padding: 1rem;
+  padding: 0.5em;
   font-size: 3m;
   border: none;
   vertical-align: middle;
@@ -198,7 +216,7 @@ nav {
 #ques {
   vertical-align: middle;
 
-  margin-right: 60vh;
+  margin-right: 25em;
 }
 
 .qa-box {
@@ -206,9 +224,9 @@ nav {
   font-size: large;
   font-family: "Didact Gothic", sans-serif;
   color: white;
-  background-color: #303030;
+  background-color: #9e9e9e;
 
-  width: 45rem;
+  width: 40rem;
   vertical-align: middle;
   font-weight: lighter;
   margin-left: auto;
@@ -217,7 +235,7 @@ nav {
 }
 .add,
 .close {
-  background-color: #303030;
+  background-color: #9e9e9e;
   float: right;
   border: none;
   font-size: 3rem;
@@ -293,13 +311,14 @@ th {
   padding: 1em;
 }
 .dropbtn {
-  background-color: #000000;
+  background-color: #ffffff;
   color: var(--netgrey);
   padding: 10px 25px 10px 5px;
   font-size: 16px;
   border-color: white;
   border-width: 0.000001px;
   cursor: pointer;
+  border: none;
 }
 
 .dropdown {
@@ -331,7 +350,7 @@ th {
   display: block;
 }
 #gif-1,
-#gif-3 ,#gif-4 {
+#gif-3{
   border-radius: 2em;
 }
 
@@ -339,8 +358,7 @@ nav {
   width: 95em;
   text-align: center;
 }
-/* ///////////////////////////////////////////////////////////////////// */
-/* light */
+
 #bgmode {
   border-radius: 1em;
   padding: 0.2em 2em 0.2em 2em;
@@ -350,6 +368,11 @@ nav {
   font-size: x-large;
   background-color: white;
   font-weight: bold;
-  border: none;
   cursor: pointer;
+}
+#mail::placeholder{ 
+    font-family: var(--myfont); 
+    font-weight: lighter;
+    color:rgb(255, 255, 255) ;
+    font-size: x-large; 
 }
