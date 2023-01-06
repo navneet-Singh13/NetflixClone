@@ -385,6 +385,7 @@ nav {
     background-repeat: no-repeat;
     background-size: 100% 100%;
     width: 100%;
+    /* padding: 1.5em; */
     
   }
   #logo {
@@ -503,5 +504,8 @@ nav {
   }
   table{
     text-align: left;
+  }
+  #al{
+    text-align: center;
   }
 }
