@@ -45,7 +45,7 @@ modebtn.addEventListener("click", () => {
 var d = new Date();
 var hr = d.getHours();
 console.log(hr);
-if (hr >= 19 && hr<=24 || hr>=1 && hr<=4) {
+if (hr >= 19 && hr<=24 || hr>=0 && hr<=4) {
   sheet.setAttribute("href", "style.css");
   modebtn.innerHTML = "☀️";
   
