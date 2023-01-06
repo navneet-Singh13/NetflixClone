@@ -73,7 +73,7 @@ header {
 }
 #intro-movies {
   color: azure;
-  
+  padding-bottom: 0 !important;
   font-size: 4em;
 }
 #watch {
@@ -163,6 +163,7 @@ nav {
   margin-right: auto;
   align-items: center;
   width: 100rem;
+  text-align: center;
 }
 .content-images {
   display: inline-block;
@@ -374,5 +375,148 @@ nav {
     font-family: var(--myfont); 
     font-weight: lighter;
     color:rgb(255, 255, 255) ;
-    font-size: x-large; 
+    font-size: medium; 
+}
+#ques{ 
+  margin: 0 !important;
+  float: left;
+  padding-bottom: 0;
+  padding-top: 0;
+}
+.add{
+  
+  margin-left: 4.3em;
+}
+.close{
+  margin-left: 4.3em;
+  
+}
+#question { 
+  height: 1em;
+}
+@media only screen and (max-width: 600px) {
+  #home{ 
+    overflow-x: hidden;
+  }
+  
+  header {
+    background-image: linear-gradient(
+      180deg,#000 15%,transparent
+      linear-gradient(0deg,rgba(0,0,0,.4))
+      ),url("background-netflix.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 100%;
+  }
+  #logo {
+    height:2.5rem;
+    width: 6.8rem;
+    float: left;
+  }
+  #sign-in {
+    padding: 0.2em 0.7em 0.2em 0.7em;
+    background-color: var(--netred);
+    border-radius: 0.2rem;
+    text-decoration: none;
+    color: white;
+    font-size: small;
+  }
+  #lang-top {
+    
+    /* margin: 0 1.5em 0 0; */
+    padding: 1.3px 19px 7px 7px;
+    font-size: small;
+    background-repeat: no-repeat;
+    background: transparent;
+    border-color: rgb(166, 166, 166, 0.5);
+    border-width: 1px;
+    box-shadow: none;
+    margin-right: 0;
+  }
+
+  nav{ 
+    width: 100%;
+  }
+  #bgmode{ 
+    /* display: none; */
+    float: right;
+    font-size: small;
+    padding: 0.1em 0.5em 0.1em 0.5em;
+  }
+  #intro-movies { 
+    margin-top: 5%;
+    font-size: 1.8em;
+    font-weight: bold;
+    padding: 1.5em;
+  }
+  #none{ 
+    height:1vh ;
+  }
+  #mail{
+    width: 90%;
+    height: 2.5rem;
+    margin-bottom: 1em;
+  }
+  .getst{ 
+    height: 3em;
+    width: 8em;
+    font-size: x-small;
+  }
+  #watch {
+    font-size: 1em;
+    font-weight: lighter;
+  }
+  #ready {
+    font-size: medium;
+  }
+  .content-text { 
+    text-align: center;
+    align-content: center;
+    padding: 0.9em 0.5em 0.9em 0.5em;
+  }
+  .desc-plus-image{ 
+    width: 100%;
+    display: block;
+    padding: 0;
+    
+  }
+  
+  .content-images{
+    width: 100%;
+    height: 34vh;
+    padding: 1em 1em 1em 1em;
+    margin-bottom: 3em;
+  }
+  #faqs{ 
+    width: 100%;
+  }
+  .qa-box{
+    width: 100%;
+    
+  }
+  #question { 
+    width: 100%;
+    height: 2.5em;
+    padding:0 ; 
+  }
+  .ans{
+    width: 100%;
+  }
+  footer{
+    padding: 3.5em;
+    width: 100%;
+  }
+  #last-para{ 
+    margin-top: 2.5em;
+    font-size: medium;
+  }
+  .card-content-des{ 
+    font-size: large;
+  }
+  .dropbtn{
+    font-size: small;
+  }
+  #down-ques{
+    color:grey
+  }
 }
