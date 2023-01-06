@@ -395,10 +395,7 @@ nav {
   height: 1em;
 }
 @media only screen and (max-width: 600px) {
-  #home{ 
-    overflow-x: hidden;
-  }
-  
+ 
   header {
     background-image: linear-gradient(
       180deg,#000 15%,transparent
