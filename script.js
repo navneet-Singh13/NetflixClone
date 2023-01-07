@@ -13,7 +13,7 @@ for (let i = 0; i < qaBox.length; i++) {
     ans.style.display = "block";
     openBtn.style.display = "none";
     closeBtn.style.display = "inline-block";
-    ans.style.animation = "ch-open 0.2199999955s";
+    ans.style.animation = "ch-open 0.11199999955s";
   });
   closeBtn.addEventListener("click", () => {
     ans.style.display = "none";
