@@ -223,7 +223,7 @@ nav {
   background-color: #303030;
   float: right;
   border: none;
-  font-size: 3rem;
+  font-size: 1.65rem;
   margin-right: 2vh;
   font-weight: lighter;
 }
@@ -504,6 +504,12 @@ nav {
   #ques{
     font-size: 1em;
     z-index: 2;
+  }
+  .add{
+    font-weight: 100;
+  }
+  .close{
+    font-weight: 100;
   }
 }
 
