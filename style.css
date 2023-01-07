@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@300&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
 @import url("https://fonts.googleapis.com/css2?family=Bellota+Text&display=swap");
 body {
   background-color: black;
@@ -12,7 +13,8 @@ body {
 * {
   user-select: none;
   color: white;
-  font-family: sans-serif;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 900;
 }
 
 header {
@@ -357,21 +359,13 @@ nav {
   float: left;
   padding-bottom: 0;
   padding-top: 0;
-}
-.add{
-  
-  margin-left: 4.3em;
-}
-.close{
-  margin-left: 4.3em;
   
 }
 #question { 
   height: 1em;
 }
-@media only screen and (max-width: 600px) {
- 
-  
+@media only screen and (max-width: 900px) {
+
   header {
     background-image: linear-gradient(
       0deg,
@@ -466,9 +460,11 @@ nav {
   }
   #faqs{ 
     width: 100%;
+    
   }
   .qa-box{
-    width: 100%;
+    
+    width: 100%; 
     
   }
   #question { 
@@ -505,4 +501,29 @@ nav {
   #al{
     text-align: center;
   }
+  #ques{
+    font-size: 1em;
+    z-index: 2;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+    #dpione,#dpithree{
+      display: flex;
+      flex-direction: row-reverse;
+      
+    }
+    #gif-3,#gif-1{
+      margin-right: 8em;
+      height: 20em;
+      width: 30em ;
+      text-align: right;
+    }
+    .desc-plus-image{
+      text-align: left;
+    }
+    
+}
+.card-content-des{
+  font-size: x-large;
 }

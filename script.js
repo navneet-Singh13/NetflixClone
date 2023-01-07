@@ -1,17 +1,8 @@
-
-const imgdesone = document.getElementById("des-img-media"); 
-const UnitedImg = `<img src="tv-2.png" alt="Netflix TV" class="content-images" id="gif-2">` ; 
-const imgdestwo = document.getElementById("des-img-media-2"); 
-const marv = `<img src="marv.gif" alt="Netflix TV" class="content-images" id="child-img">`
 const mediaQuery = window.matchMedia('(min-width: 600px)');
-if ( window.outerWidth < 1000 ) { 
-  imgdesone.insertAdjacentHTML("afterend" , UnitedImg);
-  imgdestwo.insertAdjacentHTML("afterend" , marv);
-}
-else{ 
-  imgdesone.insertAdjacentHTML("afterbegin" , UnitedImg);
-  imgdestwo.insertAdjacentHTML("afterbegin" , marv);
-}
+const imgplusdes = document.getElementsByClassName('desc-plus-image')  ; 
+console.log(imgplusdes)
+
+
 const qaBox = document.getElementsByClassName("qa-box");
 const home = document.getElementById("home");
 for (let i = 0; i < qaBox.length; i++) {

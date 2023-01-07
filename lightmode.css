@@ -1,28 +1,18 @@
 @import url("https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@300&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
 @import url("https://fonts.googleapis.com/css2?family=Bellota+Text&display=swap");
 body {
   position: sticky;
 
   width: 100%;
-  background: #dbe6f6; /* fallback for old browsers */
-  background: -webkit-linear-gradient(
-    to right,
-    #c5796d,
-    #dbe6f6
-  ); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(
-    to right,
-    #c5796d,
-    #dbe6f6
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #f7f7f7; /* fallback for old browsers */
 }
-#home {
-  z-index: -2;
-}
-* {
+
+*{
   user-select: none;
   color: rgb(0, 0, 0);
-  font-family: sans-serif;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 900;
 }
 
 header {
@@ -31,7 +21,7 @@ header {
       rgba(0, 0, 0, 0.949),
       rgba(0, 0, 0, 0.344)
     ),
-    url("blury.png");
+    url("bluishbg.jpg");
   background-repeat: no-repeat;
   background-size: 100% 100%;
 }
@@ -51,7 +41,7 @@ header {
   box-shadow: none;
 }
 :root {
-  --netred: rgb(188, 67, 67);
+  --netred: rgb(19, 17, 93);
   --myfont: "Darker Grotesque", sans-serif;
   --netgrey: rgb(64, 64, 64);
 }
@@ -225,7 +215,7 @@ nav {
   font-size: large;
   font-family: "Didact Gothic", sans-serif;
   color: white;
-  background-color: #9e9e9e;
+  background-color: #707070;
 
   width: 40rem;
   vertical-align: middle;
@@ -236,10 +226,10 @@ nav {
 }
 .add,
 .close {
-  background-color: #9e9e9e;
+  background-color: #707070;
   float: right;
   border: none;
-  font-size: 3rem;
+  font-size: 1.6rem;
   margin-right: 2vh;
   font-weight: lighter;
 }
@@ -380,14 +370,7 @@ nav {
   padding-bottom: 0;
   padding-top: 0;
 }
-.add{
-  
-  margin-left: 4.3em;
-}
-.close{
-  margin-left: 4.3em;
-  
-}
+
 #question { 
   height: 1em;
 }
@@ -513,4 +496,31 @@ nav {
   #down-ques{
     color:grey
   }
+  .add{
+    font-weight: 100;
+  }
+  .close{
+    font-weight: 100;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  #dpione,#dpithree{
+    display: flex;
+    flex-direction: row-reverse;
+    
+  }
+  #gif-3,#gif-1{
+    margin-right: 8em;
+    height: 20em;
+    width: 30em ;
+    text-align: right;
+  }
+  .desc-plus-image{
+    text-align: left;
+  }
+  
+}
+.card-content-des{
+  font-size: x-large;
 }
