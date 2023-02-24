@@ -1,0 +1,1 @@
+Welcome to our Netflix Front Page clone! We have designed this website to provide you with a similar user interface to the popular streaming platform, Netflix. Our website has been made using HTML and CSS, ensuring that it is lightweight and fast to load.
